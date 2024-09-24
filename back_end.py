@@ -39,7 +39,7 @@ def gange3():
     tall1 = input("Skriv inn det første tallet: ")  
     tall2 = input("Skriv inn det andre tallet: ")   
     tall3 = input("Skriv inn det tredje tallet: ")  
-    tall4 = input("Srkiv inn det fjerde tallet: ")  
+    tall4 = input("Skriv inn det fjerde tallet: ")  
     diff = int(tall1) * int(tall2) * int(tall3) * int(tall4)  # Tallene multipliseres
     print(f'{tall1} * {tall2} * {tall3} * {tall4}  = {diff}')  # Resultatet skrives ut
 
@@ -48,7 +48,36 @@ def gange4():
     tall1 = input("Skriv inn det første tallet: ")  # Brukeren skriver inn første tall
     tall2 = input("Skriv inn det andre tallet: ")   # Brukeren skriver inn andre tall
     tall3 = input("Skriv inn det tredje tallet: ")  # Brukeren skriver inn tredje tall
-    tall4 = input("Srkiv inn det fjerde tallet: ")  # Brukeren skriver inn fjerde tall
-    tall5 = input("Srkiv inn det femte tallet: ")   # Brukeren skriver inn femte tall
+    tall4 = input("Skriv inn det fjerde tallet: ")  # Brukeren skriver inn fjerde tall
+    tall5 = input("Skriv inn det femte tallet: ")   # Brukeren skriver inn femte tall
     diff = int(tall1) * int(tall2) * int(tall3) * int(tall4) * int(tall5)  # Tallene multipliseres
     print(f'{tall1} * {tall2} * {tall3} * {tall4} * {tall5}  = {diff}')  # Resultatet skrives ut
+
+def leggSammen(a, b):
+    return a + b
+
+def trekkFra(a, b):
+    return a - b
+
+def dele(a, b):
+    return a / b if b != 0 else "Kan ikke dividere med null"
+
+def gange(a, b):
+    return a * b
+
+operator_dict = {
+    '+': leggSammen,
+    '-': trekkFra,
+    '/': dele,
+    '*': gange
+}
+
+operator = input("Velg en operator (+, -, /, *): ")
+tall1 = int(input("Skriv inn første tall: "))
+tall2 = int(input("Skriv inn andre tall: "))
+
+if operator in operator_dict:
+    result = operator_dict[operator](tall1, tall2)
+    print(f"Resultat: {result}")
+else:
+    print("ikke riktig operatør")
