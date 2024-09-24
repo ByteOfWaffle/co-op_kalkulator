@@ -22,6 +22,7 @@ def utfoerMenyvalg(valgtTall):
         pause_og_fortsett()
     elif valgtTall == "3":
         gange()
+        pause_og_fortsett()
     elif valgtTall == "4":
         unfinished()
     elif valgtTall == "5":
