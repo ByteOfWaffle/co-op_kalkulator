@@ -21,14 +21,14 @@ def utfoerMenyvalg(valgtTall):
         trekkFra()
         pause_og_fortsett()
     elif valgtTall == "3":
-        svar = input("hvor mange tall vil du gange? (max 4) ")
-        if svar == "1":
+        svar = input("hvor mange tall vil du gange? (Min 2 max 5) ")
+        if svar == "2":
             gange()
-        elif svar == "2":
-            gange2()
         elif svar == "3":
-            gange3()
+            gange2()
         elif svar == "4":
+            gange3()
+        elif svar == "5":
             gange4()
         else: print ("*** Ugyldig input. Prøv igjen ***")
             
