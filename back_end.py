@@ -76,6 +76,7 @@ def operator():
     operator = input("Velg en operator (+, -, /, *): ")
     tall1 = int(input("Skriv inn første tall: "))
     tall2 = int(input("Skriv inn andre tall: "))
+    
 
     if operator in operator_dict:
         result = operator_dict[operator](tall1, tall2)
