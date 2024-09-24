@@ -23,8 +23,12 @@ def gange():
     diff = int(tall1) * int(tall2)
     print(f'{tall1} * {tall2}  = {diff}') 
 
-
-
+def gange2():
+    tall1 = input("Skriv inn det første tallet: ")
+    tall2 = input("Skriv inn det andre tallet: ")
+    tall3 = input("Skriv inn det tredje tallet: ")
+    diff = int(tall1) * int(tall2)
+    print(f'{tall1} * {tall2}  = {diff}') 
 
 ''' Her er noen påbegynte tanker til utvidelse
 def gange():
