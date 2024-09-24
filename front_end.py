@@ -44,3 +44,4 @@ def pause_og_fortsett():
 
 printMeny()
 
+#Hello there 
