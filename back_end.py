@@ -53,31 +53,32 @@ def gange4():
     diff = int(tall1) * int(tall2) * int(tall3) * int(tall4) * int(tall5)  # Tallene multipliseres
     print(f'{tall1} * {tall2} * {tall3} * {tall4} * {tall5}  = {diff}')  # Resultatet skrives ut
 
-def leggSammen(a, b):
-    return a + b
+def operator():
+    def leggSammen(a, b):
+        return a + b
 
-def trekkFra(a, b):
-    return a - b
+    def trekkFra(a, b):
+        return a - b
 
-def dele(a, b):
-    return a / b if b != 0 else "Kan ikke dividere med null"
+    def dele(a, b):
+        return a / b if b != 0 else "Kan ikke dividere med null"
 
-def gange(a, b):
-    return a * b
+    def gange(a, b):
+        return a * b
 
-operator_dict = {
-    '+': leggSammen,
-    '-': trekkFra,
-    '/': dele,
-    '*': gange
-}
+    operator_dict = {
+        '+': leggSammen,
+        '-': trekkFra,
+        '/': dele,
+        '*': gange
+    }
 
-operator = input("Velg en operator (+, -, /, *): ")
-tall1 = int(input("Skriv inn første tall: "))
-tall2 = int(input("Skriv inn andre tall: "))
+    operator = input("Velg en operator (+, -, /, *): ")
+    tall1 = int(input("Skriv inn første tall: "))
+    tall2 = int(input("Skriv inn andre tall: "))
 
-if operator in operator_dict:
-    result = operator_dict[operator](tall1, tall2)
-    print(f"Resultat: {result}")
-else:
-    print("ikke riktig operatør")
+    if operator in operator_dict:
+        result = operator_dict[operator](tall1, tall2)
+        print(f"Resultat: {result}")
+    else:
+        print("ikke riktig operatør")

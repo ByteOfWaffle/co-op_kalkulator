@@ -8,6 +8,7 @@ def printMeny():
     print("| 3. Gange       (multiplikasjon)                |")
     print("| 4. Dele        (divisjon)                      |")
     print("| 5. Avslutt     (avsluttfikasjon)               |")
+    print("| 6. Operator    (operator)                      |")
     print("--------------------------------------------------")
     menyvalg = input("Velg operasjon fra menyen: ")
     utfoerMenyvalg(menyvalg)
@@ -36,6 +37,8 @@ def utfoerMenyvalg(valgtTall):
         pause_og_fortsett()
     elif valgtTall == "4":
         dele()
+    elif valgtTall == "6":
+        operator()
         pause_og_fortsett()
     elif valgtTall == "5":
         bekreftelse = input("Er du sikker på at du vil avslutte? J/N ")
