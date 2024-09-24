@@ -1,6 +1,6 @@
 ## Funksjon for å legge sammen to tall
 def leggSammen():
-    tall1 = input("Skriv inn det første tallet: ")  
+    tall1 = int(input("Skriv inn det første tallet: "))
     tall2 = input("Skriv inn det andre tallet: ")   
     sum = int(tall1) + int(tall2)  # Tallene konverteres til heltall og legges sammen
     print(f'{tall1} + {tall2} = {sum}')  # Resultatet skrives ut
